@@ -1,0 +1,24 @@
+.container {
+    cursor: pointer;
+    width: 300px;
+    position: relative;
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.title {
+    position: absolute;
+    margin-top: -40px;
+    padding-left: 10px;
+    padding-top: 8px;
+    padding-right: 10px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 40px;
+    border-radius: 0 0 10px 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
