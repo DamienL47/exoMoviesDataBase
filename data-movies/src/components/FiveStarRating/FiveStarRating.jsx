@@ -5,6 +5,7 @@ export function FiveStarRating({ rating }) {
   const starList = [];
 
   const starFillCount = Math.floor(rating);
+
   const hasStarHalf = rating - starFillCount >= 0.5;
   const starEmptyCount = 5 - starFillCount - (hasStarHalf ? 1 : 0);
 
