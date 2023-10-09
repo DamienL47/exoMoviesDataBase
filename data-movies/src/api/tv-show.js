@@ -23,4 +23,16 @@ export class TVShowAPI {
       console.log("Détail de l'erreur ", error);
     }
   }
+  static async fetchByTitle(title) {
+    try {
+      const data = await fetch(
+        `${BASE_URL}search/tv${API_KEY_PARAM}&query=${title}`
+      );
+      const response = await data.json();
+      const movies = response.results;
+      return movies;
+    } catch (error) {
+      console.log("Détail de l'erreur ", error);
+    }
+  }
 }
